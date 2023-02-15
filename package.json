@@ -1,0 +1,38 @@
+{
+  "name": "adsagency-client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-common-types": "^6.2.0",
+    "@fortawesome/fontawesome-svg-core": "^6.3.0",
+    "@fortawesome/free-brands-svg-icons": "^6.3.0",
+    "@fortawesome/free-solid-svg-icons": "^6.3.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@next/font": "13.1.6",
+    "@types/node": "18.13.0",
+    "@types/react": "18.0.27",
+    "@types/react-dom": "18.0.10",
+    "@types/react-fontawesome": "^1.6.5",
+    "antd": "^5.2.0",
+    "autoprefixer": "^10.4.13",
+    "dotenv": "^16.0.3",
+    "eslint": "8.33.0",
+    "eslint-config-next": "13.1.6",
+    "flowbite": "^1.6.3",
+    "flowbite-react": "^0.3.8",
+    "next": "13.1.6",
+    "next-auth": "^4.19.2",
+    "nodemailer": "^6.9.1",
+    "postcss": "^8.4.21",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "tailwindcss": "^3.2.6",
+    "typescript": "4.9.5"
+  }
+}
