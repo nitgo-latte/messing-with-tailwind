@@ -13,11 +13,16 @@ import {
   searchTree,
 } from "../components/search/types"
 import Layout from "@/components/Layout"
+import ImageGallery from "@/components/ImageGallery"
 const { Option } = Select
 
 export type SearchPageProps = {
   status: "authenticated" | "loading" | "unauthenticated"
 }
+
+const images: string[] = new Array(20).fill(
+  "https://cdn.shopify.com/s/files/1/0685/9209/articles/Image_header_thunder_blog_OP_1024x1024.jpg?v=1529686946"
+)
 
 const SearchWithGallery = ({ status }: SearchPageProps) => {
   const [searchObj, setSearchObj] = useState<SearchObj>({
@@ -32,7 +37,7 @@ const SearchWithGallery = ({ status }: SearchPageProps) => {
     <Option key={idx}>{option}</Option>
   ))
 
-  const handleStyleDropdown = ({
+  const handleDropdownChange = ({
     target: { name: fieldName, value },
   }: React.ChangeEvent<HTMLSelectElement>) => {
     setSearchObj((prev) => ({
@@ -67,7 +72,7 @@ const SearchWithGallery = ({ status }: SearchPageProps) => {
               className="block appearance-none max-w-fit bg-gray-700 border border-gray-700 text-white py-3 px-4 rounded flex-1"
               name="style"
               value={searchObj.style}
-              onChange={handleStyleDropdown}
+              onChange={handleDropdownChange}
             >
               {searchTreeClone.styles.map((val) => {
                 const capitalizedVal = val[0].toUpperCase() + val.substring(1)
@@ -111,7 +116,7 @@ const SearchWithGallery = ({ status }: SearchPageProps) => {
                   className="block appearance-none max-w-fit bg-gray-700 border border-gray-700 text-white rounded"
                   name="productType"
                   value={searchObj.productType}
-                  onChange={handleStyleDropdown}
+                  onChange={handleDropdownChange}
                 >
                   {searchTreeClone.productTypes.map((val) => {
                     const capitalizedVal =
@@ -127,6 +132,9 @@ const SearchWithGallery = ({ status }: SearchPageProps) => {
             </div>
           </div>
         </form>
+
+        {/* insert image gallery here */}
+        <ImageGallery images={images} />
       </div>
     </Layout>
   )
