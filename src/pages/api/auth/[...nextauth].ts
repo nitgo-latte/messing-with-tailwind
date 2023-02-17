@@ -7,7 +7,7 @@ import FacebookProvider from "next-auth/providers/facebook"
 dotenv.config()
 
 export default NextAuth({
-  secret: process.env.SECRET,
+  secret: process.env.NEXTAUTH_SECRET,
   providers: [
     // AppleProvider({
     //   clientId: process.env.APPLE_ID,
