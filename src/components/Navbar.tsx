@@ -45,7 +45,6 @@ const NavBar = () => {
   const { data: session } = useSession()
   const router = useRouter()
   const { pathname } = router
-  console.log("pathname", pathname)
 
   const loginFlow = async () => {
     await signIn()
@@ -57,7 +56,7 @@ const NavBar = () => {
       rounded={true}
       className="p-3 flex flex-row border border-gray-300 sm:flex-row justify-between items-center"
     >
-      <Navbar.Brand href="">
+      <Navbar.Brand href="/">
         <FontAwesomeIcon icon={faRobot} bounce color="dark" />
         <span className="ml-2 self-center whitespace-nowrap text-xl font-normal dark:text-white">
           adsgency.ai
