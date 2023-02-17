@@ -5,6 +5,7 @@ import { getSession, useSession } from "next-auth/react"
 
 export default function Home() {
   const { status } = useSession()
+  console.log("process.env", process.env)
 
   return (
     <Layout>
