@@ -11,7 +11,7 @@ interface QueryProps extends ParsedUrlQuery {
   imgSrc?: string
 }
 
-const blank = () => {
+const ImageDetail = () => {
   const router = useRouter()
   const query = router.query as QueryProps
   const {
@@ -55,7 +55,7 @@ const blank = () => {
             <a
               className="border-2 duration-200 ease inline-flex items-center mb-1 mr-1 transition p-3 rounded-lg text-white border-blue-600 bg-blue-600 hover:bg-blue-700 hover:border-blue-700"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
               href="https://facebook.com/sharer/sharer.php?u="
               aria-label="Share on Facebook"
               draggable="false"
@@ -74,7 +74,7 @@ const blank = () => {
             <a
               className="border-2 duration-200 ease inline-flex items-center mb-1 mr-1 transition p-3 rounded-lg text-white border-blue-600 bg-blue-600 hover:bg-blue-700 hover:border-blue-700"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
               href="https://www.linkedin.com/shareArticle?mini=true&amp;url=&amp;title=&amp;summary=&amp;source="
               aria-label="Share on Linkedin"
               draggable="false"
@@ -93,7 +93,7 @@ const blank = () => {
             <a
               className="border-2 duration-200 ease inline-flex items-center mb-1 mr-1 transition p-3 rounded-lg text-white border-blue-600 bg-blue-600 hover:bg-blue-700 hover:border-blue-700"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
               href="https://pinterest.com/pin/create/button/?url=&amp;media=&amp;description="
               aria-label="Share on Pinterest"
               draggable="false"
@@ -116,4 +116,4 @@ const blank = () => {
   )
 }
 
-export default blank
+export default ImageDetail

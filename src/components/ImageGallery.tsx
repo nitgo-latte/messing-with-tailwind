@@ -31,6 +31,7 @@ const ImageGallery: React.FC<Props> = ({ images }) => {
               <Image
                 src={image}
                 preview={false}
+                alt="empty alt messsage"
                 onClick={() => viewImageDetails(image)}
                 className="hover:cursor-pointer"
               />
