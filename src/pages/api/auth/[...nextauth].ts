@@ -13,17 +13,17 @@ export default NextAuth({
     //   clientId: process.env.APPLE_ID,
     //   clientSecret: process.env.APPLE_SECRET,
     // }),
-    // GoogleProvider({
-    //   clientId: process.env.GOOGLE_ID as string,
-    //   clientSecret: process.env.GOOGLE_SECRET as string,
-    //   authorization: {
-    //     params: {
-    //       prompt: "consent",
-    //       access_type: "offline",
-    //       response_type: "code",
-    //     },
-    //   },
-    // }),
+    GoogleProvider({
+      clientId: process.env.GOOGLE_ID as string,
+      clientSecret: process.env.GOOGLE_SECRET as string,
+      authorization: {
+        params: {
+          prompt: "consent",
+          access_type: "offline",
+          response_type: "code",
+        },
+      },
+    }),
     // Sign in with passwordless email link
     // EmailProvider({
     //   server: process.env.MAIL_SERVER,
@@ -33,9 +33,9 @@ export default NextAuth({
       clientId: process.env.GITHUB_ID as string,
       clientSecret: process.env.GITHUB_SECRET as string,
     }),
-    // FacebookProvider({
-    //   clientId: process.env.FACEBOOK_CLIENT_ID as string,
-    //   clientSecret: process.env.FACEBOOK_CLIENT_SECRET as string,
-    // }),
+    FacebookProvider({
+      clientId: process.env.FACEBOOK_CLIENT_ID as string,
+      clientSecret: process.env.FACEBOOK_CLIENT_SECRET as string,
+    }),
   ],
 })
