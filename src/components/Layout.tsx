@@ -15,7 +15,7 @@ const FooterBar = () => {
         <Footer.Link href="#">Licensing</Footer.Link>
         <Footer.Link href="#">Contact</Footer.Link>
       </Footer.LinkGroup>
-      <Footer.Copyright href="#" by="adsgency.ai™" year={2023} />
+      <Footer.Copyright href="#" by="red.potatoes™" year={2023} />
     </Footer>
   )
 }

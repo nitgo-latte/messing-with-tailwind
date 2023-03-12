@@ -59,7 +59,7 @@ const NavBar = () => {
       <Navbar.Brand href="/">
         <FontAwesomeIcon icon={faRobot} bounce color="dark" />
         <span className="ml-2 self-center whitespace-nowrap text-xl font-normal dark:text-white">
-          adsgency.ai
+          red.potatoes
         </span>
       </Navbar.Brand>
       <Navbar.Collapse>

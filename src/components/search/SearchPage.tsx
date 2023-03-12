@@ -72,7 +72,7 @@ const SearchPage = ({ status }: SearchPageProps) => {
     <div className="flex flex-col items-center space-y-12 md:space-x-3">
       <div className="mt-24">
         <h1 className="text-6xl font-extrabold text-purple-400 tracking-wide">
-          AdsGency AI
+          red potatoes
         </h1>
       </div>
       {/* search bar container */}
